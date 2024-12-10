@@ -25,7 +25,6 @@ jobs:
 
     # Step 4: SonarCloud Scan
     - name: SonarCloud Scan
-      working-directory: ./MyWebApp
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: |
